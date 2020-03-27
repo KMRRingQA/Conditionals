@@ -1,14 +1,13 @@
 package com.qa.main;
 
 public class Q1_Calculator {
-	public int calculate(int Number1, int Number2, boolean Sign) {
+	public int calculate(int number1, int number2, boolean sign) {
 		int Answer;
-			if (Sign == true) {
-				Answer = Number1 + Number2;
-			}
-			else {
-				Answer = Number1 * Number2;
-			}
+		if (sign) {
+			Answer = number1 + number2;
+		} else {
+			Answer = number1 * number2;
+		}
 		return Answer;
 	}
 }

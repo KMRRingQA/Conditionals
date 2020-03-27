@@ -1,17 +1,16 @@
 package com.qa.main;
 
 public class Q3_NoEvens {
-	public int calculate(int Number1, int Number2, boolean Sign) {
-		if (Number1%2==0 || Number2%2==0) {
+	public int calculate(int number1, int number2, boolean sign) {
+		if (number1 % 2 == 0 || number2 % 2 == 0) {
 			return 0;
 		}
-		int Answer;
-			if (Sign == true) {
-				Answer = Number1 + Number2;
-			}
-			else {
-				Answer = Number1 * Number2;
-			}
-		return Answer;
+		int answer;
+		if (sign) {
+			answer = number1 + number2;
+		} else {
+			answer = number1 * number2;
+		}
+		return answer;
 	}
 }
